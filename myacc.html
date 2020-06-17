@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      background-image:url("a3.jpg");
+      background-size: 100%;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    .re{
+    	text-decoration-color:  black;
+
+    	text-align:right;
+
+    }
+    .qw{
+    	 width: 40px;
+  height: 40px;
+    }
+    footer {
+      background-color: lightblue;
+      padding: 25px;
+  }
+  ul{
+  	list-style-type: none;
+  }
+   .imageupload {
+               border-radius: 50px 50px 50px 50px;
+  background: lightblue;;
+  padding: 40px;
+  width: 400px;
+  height: 250px;
+            }
+            .WE{
+            	padding-top: 5px ;
+  
+  
+  padding-left: 800px;
+            }
+        </style>
+  </style>
+
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 class="re">RENTAL HOMES</h1> </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="webpage.html"><svg class="bi bi-house-door" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+		  <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+		  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+		</svg></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">response</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="myacc.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div >
+	<table><tr>
+<div class="w3-card-4">
+
+  <td><img  class="qw" src="at.svg" alt="Alps"></td>
+  <div class="w3-container w3-center">
+    <td><h3>john carter</h3></td>
+  </div>
+
+</div>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="">edit profile photo</a></li>
+<li><a href="">describe who you are</a></li>
+</ul>
+ <div class="WE">
+
+            <!-- bootstrap-imageupload. -->
+            <div class="imageupload panel panel-default">
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title pull-left">Select Image file</h3>
+                    <div class="btn-group pull-right">
+                    </div>
+                </div>
+                <div class="file-tab panel-body">
+                    <label class="btn btn-primary btn-file">
+                        <span>Browse</span>
+                        <!-- The file is stored here. -->
+                        <input type="file" name="image-file"accept="image/*">
+                    </label>
+                </div>
+                <div class="url-tab panel-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control hasclear" placeholder="Add discription">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default">Post</button>
+                        </div>
+                    </div>
+                    
+                    <!-- The URL is stored here. -->
+                    <input type="hidden" name="image-url">
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/bootstrap-imageupload/bootstrap-imageupload.js"></script>
+
+        <script>
+            var $imageupload = $('.imageupload');
+            $imageupload.imageupload();
+
+        </script>
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+</footer>
+
+</body>
+</html>
